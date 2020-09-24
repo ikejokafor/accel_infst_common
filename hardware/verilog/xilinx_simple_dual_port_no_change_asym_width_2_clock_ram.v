@@ -28,7 +28,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-module xilinx_simple_dual_port_no_change_asym_width_count_2_clock_ram #(
+module xilinx_simple_dual_port_no_change_asym_width_2_clock_ram #(
     parameter C_RAM_WR_WIDTH        = 16    ,
     parameter C_RAM_WR_DEPTH        = 1024  ,
     parameter C_RAM_RD_WIDTH        = 32    ,
@@ -68,8 +68,8 @@ module xilinx_simple_dual_port_no_change_asym_width_count_2_clock_ram #(
 	localparam C_CLG2_RAM_WR_DEPTH       = clog2(C_RAM_WR_DEPTH);
 	localparam C_CLG2_RAM_RD_DEPTH       = clog2(C_RAM_RD_DEPTH);
 	localparam C_CLG2_RD_WR_RATIO        = (C_RAM_RD_WIDTH / C_RAM_WR_WIDTH);
-			
-			
+
+
 	//------------------------------------------------------------------------------------------------------------------------------------------------
 	//	Module Ports
 	//------------------------------------------------------------------------------------------------------------------------------------------------
