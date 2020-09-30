@@ -32,7 +32,7 @@
 module vector_multiply 
 #(
 	parameter C_OP_WIDTH = 16,
-	parameter C_NUM_OPERANDS = 1
+	parameter C_NUM_OPERANDS = 2
 ) (
     clk     			        ,
     rst                         ,
@@ -46,9 +46,9 @@ module vector_multiply
     //-----------------------------------------------------------------------------------------------------------------------------------------------
     //  Local Parameters
     //-----------------------------------------------------------------------------------------------------------------------------------------------
-	localparam C_OP_VEC_WIDTH		= C_OP_WIDTH * C_NUM_OPERANDS;
-	localparam C_DATA_WIDTH 	    = C_OP_VEC_WIDTH * 2;
-
+	localparam C_DATAIN_WIDTH 	    = C_OP_WIDTH * C_NUM_OPERANDS;	
+	localparam C_OP_VEC_WIDTH		= C_OP_WIDTH * (C_NUM_OPERANDS / 2);
+	localparam C_DOUT_WIDTH			= C_OP_VEC_WIDTH;
 
 
     //-----------------------------------------------------------------------------------------------------------------------------------------------
@@ -56,10 +56,10 @@ module vector_multiply
     //-----------------------------------------------------------------------------------------------------------------------------------------------
     input 	logic 							clk     		;
     input 	logic 							rst             ;
-    input 	logic [C_DATA_WIDTH - 1:0]		datain          ;    
+    input 	logic [C_DATAIN_WIDTH - 1:0]	datain          ;    
     output	logic 							datain_ready	;    
 	input 	logic 							datain_valid	;
-	output	logic [C_DATA_WIDTH - 1:0] 		dout			;
+	output	logic [C_DOUT_WIDTH - 1:0] 	    dout			;
 	input	logic 							dout_ready		;
 	output 	logic 							dout_valid		;
 

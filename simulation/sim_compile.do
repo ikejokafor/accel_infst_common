@@ -1,5 +1,6 @@
-rm -r build
-
+if {[file exist build]} {
+    rm -r build
+}
 
 vlib build
 

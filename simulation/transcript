@@ -1,0 +1,137 @@
+# //  Questa Sim-64
+# //  Version 2019.4_2 linux_x86_64 Dec  7 2019
+# //
+# //  Copyright 1991-2019 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+do sim_compile.do
+# ** Error: /bin/rm: cannot remove ‘build’: No such file or directory
+# Error in macro ./sim_compile.do line 1
+# /bin/rm: cannot remove ‘build’: No such file or directory
+#     while executing
+# "exec </dev/null /bin/rm -r build"
+#     ("uplevel" body line 1)
+#     invoked from within
+# "uplevel 1 exec $redir $new [lrange $args 1 end]"
+#     (procedure "::unknown" line 47)
+#     invoked from within
+# "rm -r build"
+do sim_compile.do
+# QuestaSim-64 vlog 2019.4_2 Compiler 2019.12 Dec  7 2019
+# Start time: 17:59:49 on Sep 24,2020
+# vlog -reportprogress 300 -lint -sv "+define+SIMULATION" -work build "+incdir+../hardware/verilog/" ../hardware/verilog/clock_gen.v 
+# -- Compiling module clock_gen
+# 
+# Top level modules:
+# 	clock_gen
+# End time: 17:59:50 on Sep 24,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2019.4_2 Compiler 2019.12 Dec  7 2019
+# Start time: 17:59:50 on Sep 24,2020
+# vlog -reportprogress 300 -lint -sv "+define+SIMULATION" -work build "+incdir+../hardware/verilog/" ../hardware/verilog/fifo_fwft.v 
+# -- Compiling module fifo_fwft
+# 
+# Top level modules:
+# 	fifo_fwft
+# End time: 17:59:51 on Sep 24,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2019.4_2 Compiler 2019.12 Dec  7 2019
+# Start time: 17:59:51 on Sep 24,2020
+# vlog -reportprogress 300 -lint -sv "+define+SIMULATION" -work build "+incdir+../hardware/verilog/" ../hardware/verilog/fifo_fwft_prog_full_count.v 
+# -- Compiling module fifo_fwft_prog_full_count
+# 
+# Top level modules:
+# 	fifo_fwft_prog_full_count
+# End time: 17:59:51 on Sep 24,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2019.4_2 Compiler 2019.12 Dec  7 2019
+# Start time: 17:59:51 on Sep 24,2020
+# vlog -reportprogress 300 -lint -sv "+define+SIMULATION" -work build "+incdir+../hardware/verilog/" ../hardware/verilog/SRL_bit.v 
+# -- Compiling module SRL_bit
+# 
+# Top level modules:
+# 	SRL_bit
+# End time: 17:59:51 on Sep 24,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2019.4_2 Compiler 2019.12 Dec  7 2019
+# Start time: 17:59:52 on Sep 24,2020
+# vlog -reportprogress 300 -lint -sv "+define+SIMULATION" -work build "+incdir+../hardware/verilog/" ../hardware/verilog/SRL_bus.v 
+# -- Compiling module SRL_bus
+# 
+# Top level modules:
+# 	SRL_bus
+# End time: 17:59:52 on Sep 24,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2019.4_2 Compiler 2019.12 Dec  7 2019
+# Start time: 17:59:52 on Sep 24,2020
+# vlog -reportprogress 300 -lint -sv "+define+SIMULATION" -work build "+incdir+../hardware/verilog/" ../hardware/verilog/xilinx_simple_dual_port_no_change_2_clock_ram.v 
+# -- Compiling module xilinx_simple_dual_port_no_change_2_clock_ram
+# 
+# Top level modules:
+# 	xilinx_simple_dual_port_no_change_2_clock_ram
+# End time: 17:59:52 on Sep 24,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2019.4_2 Compiler 2019.12 Dec  7 2019
+# Start time: 17:59:52 on Sep 24,2020
+# vlog -reportprogress 300 -lint -sv "+define+SIMULATION" -work build "+incdir+../hardware/verilog/" ../hardware/verilog/xilinx_simple_dual_port_no_change_asym_width_count_2_clock_ram.v 
+# -- Compiling module xilinx_simple_dual_port_no_change_asym_width_count_2_clock_ram
+# ** Warning: ../hardware/verilog/xilinx_simple_dual_port_no_change_asym_width_count_2_clock_ram.v(104): (vlog-2623) Undefined variable: wrArr_prt_sel.
+# 
+# Top level modules:
+# 	xilinx_simple_dual_port_no_change_asym_width_count_2_clock_ram
+# End time: 17:59:53 on Sep 24,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2019.4_2 Compiler 2019.12 Dec  7 2019
+# Start time: 17:59:53 on Sep 24,2020
+# vlog -reportprogress 300 -lint -sv "+define+SIMULATION" -work build "+incdir+../hardware/verilog/" ../hardware/verilog/xilinx_simple_dual_port_no_change_ram.v 
+# -- Compiling package xilinx_simple_dual_port_no_change_ram_v_unit
+# -- Compiling module xilinx_simple_dual_port_no_change_ram
+# 
+# Top level modules:
+# 	xilinx_simple_dual_port_no_change_ram
+# End time: 17:59:53 on Sep 24,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2019.4_2 Compiler 2019.12 Dec  7 2019
+# Start time: 17:59:53 on Sep 24,2020
+# vlog -reportprogress 300 -lint -sv "+define+SIMULATION" -work build "+incdir+../hardware/verilog/" ../hardware/verilog/xilinx_true_dual_port_no_change_ram.v 
+# -- Compiling module xilinx_true_dual_port_no_change_ram
+# 
+# Top level modules:
+# 	xilinx_true_dual_port_no_change_ram
+# End time: 17:59:53 on Sep 24,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2019.4_2 Compiler 2019.12 Dec  7 2019
+# Start time: 17:59:54 on Sep 24,2020
+# vlog -reportprogress 300 -lint -sv "+define+SIMULATION" -work build "+incdir+../hardware/verilog/" ../hardware/verilog/arbitration_nway_single_cycle.v 
+# -- Compiling module arbitration_nway_single_cycle
+# 
+# Top level modules:
+# 	arbitration_nway_single_cycle
+# End time: 17:59:54 on Sep 24,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2019.4_2 Compiler 2019.12 Dec  7 2019
+# Start time: 17:59:54 on Sep 24,2020
+# vlog -reportprogress 300 -lint -sv "+define+SIMULATION" -work build "+incdir+../hardware/verilog/" ../hardware/verilog/adder_tree.v 
+# -- Compiling module adder_tree
+# 
+# Top level modules:
+# 	adder_tree
+# End time: 17:59:54 on Sep 24,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2019.4_2 Compiler 2019.12 Dec  7 2019
+# Start time: 17:59:54 on Sep 24,2020
+# vlog -reportprogress 300 -lint -sv "+define+SIMULATION" -work build "+incdir+../hardware/verilog/" ../hardware/verilog/vector_multiply.v 
+# -- Compiling module vector_multiply
+# 
+# Top level modules:
+# 	vector_multiply
+# End time: 17:59:55 on Sep 24,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
