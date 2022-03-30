@@ -29,7 +29,7 @@ module arbitration_nway_single_cycle
 	grant_oh
 );
 
-`include "math.vh"
+`include "math.svh"
 
 	parameter C_NUM_REQUESTORS 				= 8;
 	localparam C_NUM_REQUESTORS_INT 		= 2**clog2(C_NUM_REQUESTORS);
